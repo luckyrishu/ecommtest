@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ecommtest</groupId>
+  <artifactId>ecommtestproj</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>ecommtestproj Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+   <scm>
+	<connection>scm:git:https://github.com/luckyrishu/ecom.git</connection> 
+	<developerConnection>scm:git:https://github.com/luckyrishu/ecom.git</developerConnection>
+	<url>https://github.com/luckyrishu/ecom.git</url>
+	</scm> 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+  <plugins>
+  <plugin> 
+	<groupId>org.apache.maven.scm</groupId>     
+	<artifactId>maven-scm-provider-gitexe</artifactId>    
+	<version>1.9.5</version> <configuration>
+	<goals>install</goals> 
+	</configuration> 
+  </plugin>
+  </plugins>
+    <finalName>ecommtestproj</finalName>
+  </build>
+</project>
